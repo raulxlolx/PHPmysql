@@ -7,10 +7,29 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header></header>
+    <?php 
+        // Aqui hacemos la conexion a la base de datos
+        $server="localhost";
+        $user="root";
+        $passw="";
+        $db_name="phpmysql";
+        // aqui van las tablas que vamos a crear
+
+        $conexion = new mysqli($server,$user,$passw,$db_name);
+
+        if($conexion->connect_error){
+            die("Error en la conexion: ".$conexion->connect_error);
+        }
+       
+
+    
+    ?>
+    <header><h1>Esto es el menu</h1></header>
     <main>
-        <div class="container"></div>
+        <div class="container">
+            <h1>Aqui va el contenido de las tablas </h1>
+        </div>
     </main>
-    <footer></footer>
+    <footer><h1>Aqui va informacion del footer </h1></footer>
 </body>
 </html>

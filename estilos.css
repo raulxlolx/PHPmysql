@@ -1,0 +1,30 @@
+/* Estilos para el encabezado */
+header {
+    grid-area: header;
+    /* Propiedades CSS para el encabezado */
+}
+
+/* Estilos para el contenido principal */
+main {
+    grid-area: main;
+    /* Propiedades CSS para el contenido principal */
+}
+
+/* Estilos para el pie de página */
+footer {
+    grid-area: footer;
+    /* Propiedades CSS para el pie de página */
+}
+
+
+/* Definición de la plantilla de grid */
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
