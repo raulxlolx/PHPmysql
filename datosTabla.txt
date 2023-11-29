@@ -61,21 +61,21 @@ VALUES
 
 -------------------------------------------------------------------------------------------------------------
 -- Insertar el primer registro
-INSERT INTO `bbddeklmusic`.`nombre_de_tu_tabla` 
-  (`IDVentas`, `IDDVD`, `NombreCliente`, `Telefono`, `PrecioVenta`) 
+INSERT INTO `bbddrkmusic`.`tdrkventas` 
+  (`ID_Ventas`, `ID_DVD`, `NombreCliente`, `Telefono`, `PrecioVenta`) 
 VALUES 
   (1, 1, 'Juan Pérez', 5551234567, 39.99);
 
 -- Insertar el segundo registro
-INSERT INTO `bbddeklmusic`.`nombre_de_tu_tabla` 
-  (`IDVentas`, `IDDVD`, `NombreCliente`, `Telefono`, `PrecioVenta`) 
+INSERT INTO `bbddrkmusic`.`tdrkventas` 
+  (`ID_Ventas`, `ID_DVD`, `NombreCliente`, `Telefono`, `PrecioVenta`) 
 VALUES 
   (2, 2, 'María Rodríguez', 5559876543, 49.99);
 
 -- Insertar el tercer registro
-INSERT INTO `bbddeklmusic`.`nombre_de_tu_tabla` 
-  (`IDVentas`, `IDDVD`, `NombreCliente`, `Telefono`, `PrecioVenta`) 
+INSERT INTO `bbddrkmusic`.`tdrkventas` 
+  (`ID_Ventas`, `ID_DVD`, `NombreCliente`, `Telefono`, `PrecioVenta`) 
 VALUES 
   (3, 3, 'Carlos Gutiérrez', 5555555555, 29.99);
 
--- Continuar con el cuarto al décimo registro siguiendo el mismo formato...
+
