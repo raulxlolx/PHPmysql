@@ -1,0 +1,22 @@
+INSERT INTO tdrkdvds (ID_DVD, NombreDVD, ArtistaDVD, EstiloMusicalDVD, AñoDVD, NumeroCancionesDVD, TitulosCancionesDVD, CantidadDVD, PrecioDVD, DescuentoDVD, IVADVD)
+VALUES 
+  (1, 'DVD1', 'Artista1', 'Estilo1', '2020-01-01', 10, 'Cancion1, Cancion2, Cancion3', 5, 19.99, 0.05, 0.16),
+  (2, 'DVD2', 'Artista2', 'Estilo2', '2021-01-01', 12, 'Cancion4, Cancion5, Cancion6', 8, 24.99, 0.1, 0.18),
+  (3, 'DVD3', 'Artista3', 'Estilo3', '2019-01-01', 8, 'Cancion7, Cancion8, Cancion9', 3, 14.99, 0.02, 0.15),
+  (4, 'DVD4', 'Artista4', 'Estilo4', '2022-01-01', 15, 'Cancion10, Cancion11, Cancion12', 6, 29.99, 0.08, 0.2),
+  (5, 'DVD5', 'Artista5', 'Estilo5', '2018-01-01', 11, 'Cancion13, Cancion14, Cancion15', 4, 22.99, 0.07, 0.17),
+  (6, 'DVD6', 'Artista6', 'Estilo6', '2023-01-01', 9, 'Cancion16, Cancion17, Cancion18', 7, 34.99, 0.12, 0.22),
+  (7, 'DVD7', 'Artista7', 'Estilo7', '2017-01-01', 13, 'Cancion19, Cancion20, Cancion21', 5, 19.99, 0.05, 0.16),
+  (8, 'DVD8', 'Artista8', 'Estilo8', '2022-01-01', 14, 'Cancion22, Cancion23, Cancion24', 8, 24.99, 0.1, 0.18),
+  (9, 'DVD9', 'Artista9', 'Estilo9', '2021-01-01', 10, 'Cancion25, Cancion26, Cancion27', 3, 14.99, 0.02, 0.15),
+  (10, 'DVD10', 'Artista10', 'Estilo10', '2019-01-01', 12, 'Cancion28, Cancion29, Cancion30', 3, 14.99, 0.02, 0.15);
+
+
+
+INSERT INTO tdrkventas (ID_Ventas, ID_DVD, NombreCliente, Telefono, PrecioVenta)
+VALUES 
+  (1, 1, 'Cliente1', '123456789', 25.99),
+  (2, 3, 'Cliente2', '987654321', 22.99),
+  (3, 5, 'Cliente3', '555555555', 29.99),
+  (4, 7, 'Cliente4', '333333333', 19.99),
+  (5, 9, 'Cliente5', '666666666', 24.99);

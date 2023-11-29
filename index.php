@@ -28,7 +28,10 @@
 
     
     ?>
-    <header><h1>Esto es el menu</h1></header>
+    <header>
+        <h1>Esto es el menu</h1>
+        
+    </header>
     <main>
         <div class="container">
             <h1>Aqui va el contenido de las tablas </h1>
