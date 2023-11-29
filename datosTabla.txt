@@ -1,63 +1,63 @@
+
 -- Insertar el primer registro
-INSERT INTO `bbddeklmusic`.`tdrkdvds` 
-  (`IDDVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AnoDVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
+INSERT INTO `bbddrkmusic`.`tdrkdvds` 
+  (`ID_DVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AÑODVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
 VALUES 
   (1, 'Amanecer en la Montaña', 'Sinfonía Celestial', 'Clásico', '2023-01-15', 12, 'Sonata del Alba, Serenata Montañesa, Rapsodia del Sol', 10, 29.99, 5, 2);
 
 -- Insertar el segundo registro
-INSERT INTO `bbddeklmusic`.`tdrkdvds` 
-  (`IDDVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AnoDVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
+INSERT INTO `bbddrkmusic`.`tdrkdvds` 
+  (`ID_DVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AÑODVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
 VALUES 
   (2, 'Sueños de Neptuno', 'Orquesta Oceánica', 'Ambiental', '2023-02-20', 8, 'Mareas Melódicas, Océano en Armonía, Nocturno Marítimo', 15, 39.99, 8, 3);
 
 -- Insertar el tercer registro
-INSERT INTO `bbddeklmusic`.`tdrkdvds` 
-  (`IDDVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AnoDVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
+INSERT INTO `bbddrkmusic`.`tdrkdvds` 
+  (`ID_DVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AÑODVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
 VALUES 
   (3, 'Fusión Latina', 'Estrellas Tropicales', 'Latino', '2023-03-10', 10, 'Salsa Estelar, Rumba Cósmica, Merengue Celestial', 20, 49.99, 10, 5);
 
 -- Insertar el cuarto registro
-INSERT INTO `bbddeklmusic`.`tdrkdvds` 
-  (`IDDVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AnoDVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
+INSERT INTO `bbddrkmusic`.`tdrkdvds` 
+  (`ID_DVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AÑODVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
 VALUES 
   (4, 'Aventuras en el Desierto', 'Banda del Sol', 'Folk', '2023-04-05', 15, 'Canciones del Oasis, Viento del Desierto, Noche Estrellada', 8, 59.99, 12, 4);
 
 -- Insertar el quinto registro
-INSERT INTO `bbddeklmusic`.`tdrkdvds` 
-  (`IDDVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AnoDVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
+INSERT INTO `bbddrkmusic`.`tdrkdvds` 
+  (`ID_DVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AÑODVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
 VALUES 
   (5, 'Ritmos Urbanos', 'Ciudad en Compás', 'Hip-Hop', '2023-05-12', 20, 'Callejón del Rap, Metrópolis del Ritmo, Grafitis Sonoros', 25, 69.99, 15, 3);
 
 -- Insertar el sexto registro
-INSERT INTO `bbddeklmusic`.`tdrkdvds` 
-  (`IDDVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AnoDVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
+INSERT INTO `bbddrkmusic`.`tdrkdvds` 
+  (`ID_DVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AÑODVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
 VALUES 
   (6, 'Travesía Galáctica', 'Orquesta Estelar', 'Espacial', '2023-06-25', 18, 'Voyage Cósmico, Encuentro Alienígena, Nebulosa Sinfónica', 18, 79.99, 8, 4);
 
 -- Insertar el séptimo registro
-INSERT INTO `bbddeklmusic`.`tdrkdvds` 
-  (`IDDVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AnoDVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
+INSERT INTO `bbddrkmusic`.`tdrkdvds` 
+  (`ID_DVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AÑODVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
 VALUES 
   (7, 'Vibraciones Submarinas', 'Coral Subacuático', 'Ambiental', '2023-07-08', 14, 'Melodías del Abismo, Coral en Armonía, Sonata Submarina', 30, 89.99, 10, 5);
 
 -- Insertar el octavo registro
-INSERT INTO `bbddeklmusic`.`tdrkdvds` 
-  (`IDDVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AnoDVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
+INSERT INTO `bbddrkmusic`.`tdrkdvds` 
+  (`ID_DVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AÑODVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
 VALUES 
   (8, 'Cuentos del Bosque', 'Banda Silvestre', 'Folk', '2023-08-15', 12, 'Ronda del Roble, Danza del Duende, Serenata del Sauce', 22, 44.99, 8, 2);
 
 -- Insertar el noveno registro
-INSERT INTO `bbddeklmusic`.`tdrkdvds` 
-  (`IDDVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AnoDVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
+INSERT INTO `bbddrkmusic`.`tdrkdvds` 
+  (`ID_DVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AÑODVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
 VALUES 
   (9, 'Sinfonía en el Desierto', 'Orquesta Arenosa', 'Clásico', '2023-09-20', 15, 'Arena y Armonía, Danza de los Deltas, Serenata del Sol', 15, 49.99, 10, 3);
 
 -- Insertar el décimo registro
-INSERT INTO `bbddeklmusic`.`tdrkdvds` 
-  (`IDDVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AnoDVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
+INSERT INTO `bbddrkmusic`.`tdrkdvds` 
+  (`ID_DVD`, `NombreDVD`, `ArtistaDVD`, `EstiloMusicalDVD`, `AÑODVD`, `NumeroCancionesDVD`, `TitulosCancionesDVD`, `CantidadDVD`, `PrecioDVD`, `DescuentoDVD`, `IVADVD`) 
 VALUES 
   (10, 'Exploraciones Cibernéticas', 'Bit Beats', 'Electrónico', '2023-10-05', 10, 'Circuitos Sonoros, Código del Ritmo, Electrónica Enigmática', 12, 59.99, 12, 4);
-
 
 -------------------------------------------------------------------------------------------------------------
 -- Insertar el primer registro
