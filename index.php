@@ -14,7 +14,7 @@
         $server="localhost";
         $user="root";
         $passw="";
-        $db_name="bbddrkMusic";
+        $db_name="bbddrkmusic";
         // aqui van las tablas que vamos a crear
         $tabladvds="tdrkdvds";
         $tablaventas="tdrkventas";
