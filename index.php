@@ -29,7 +29,20 @@
     
     ?>
     <header>
-        <h1>Esto es el menu</h1>
+        <h1></h1>
+
+        <ul>
+            <li>Inicio</li>
+            <li>Productos
+                <ul>
+                    <li>Producto 1</li>
+                    <li>Producto 2</li>
+                    <li>Producto 3</li>
+                </ul>
+            </li>
+            <li>Servicios</li>
+            <li>Contacto</li>
+        </ul>
         
     </header>
     <main>
