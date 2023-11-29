@@ -33,15 +33,22 @@
 
         <ul>
             <li>Inicio</li>
-            <li>Productos
+            <li>Acciones
                 <ul>
-                    <li>Producto 1</li>
-                    <li>Producto 2</li>
-                    <li>Producto 3</li>
+                    <li>Altas</li>
+                    <li>Bajas</li>
+                    <li>Modificar</li>
+                </ul>
+            <li>Consultas
+                <ul>
+                    <li>Todos Los registros</li>
+                    <li>Buscar un registro </li>
+                    <li>Buscar con orden</li>
+                    <li>Buscar registro ordenado</li>
+                    <li>Buscar registro ordenado y limitado</li>
                 </ul>
             </li>
-            <li>Servicios</li>
-            <li>Contacto</li>
+            
         </ul>
         
     </header>
