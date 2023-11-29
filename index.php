@@ -12,8 +12,10 @@
         $server="localhost";
         $user="root";
         $passw="";
-        $db_name="phpmysql";
+        $db_name="bbddrkMusic";
         // aqui van las tablas que vamos a crear
+        $tabladvds="tdrkdvds";
+        $tablaventas="tdrkventas";
 
         $conexion = new mysqli($server,$user,$passw,$db_name);
 
