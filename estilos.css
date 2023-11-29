@@ -1,30 +1,48 @@
-/* Estilos para el encabezado */
-header {
-    grid-area: header;
-    /* Propiedades CSS para el encabezado */
+/* Estilos para el menú */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilos para el contenido principal */
-main {
-    grid-area: main;
-    /* Propiedades CSS para el contenido principal */
+ul li {
+    display: inline-block;
+    position: relative;
 }
 
-/* Estilos para el pie de página */
-footer {
-    grid-area: footer;
-    /* Propiedades CSS para el pie de página */
+ul li:hover {
+    background-color: #f2f2f2;
+}
+
+ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul li {
+    display: block;
+    width: 100%;
+}
+
+ul li ul li a {
+    padding: 10px 20px;
+    color: #333;
 }
 
 
-/* Definición de la plantilla de grid */
-body {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr;
-    min-height: 100vh;
-}
+

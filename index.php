@@ -29,7 +29,27 @@
     
     ?>
     <header>
-        <h1>Esto es el menu</h1>
+        <h1></h1>
+
+        <ul>
+            <li>Inicio</li>
+            <li>Acciones
+                <ul>
+                    <li>Altas</li>
+                    <li>Bajas</li>
+                    <li>Modificar</li>
+                </ul>
+            <li>Consultas
+                <ul>
+                    <li>Todos Los registros</li>
+                    <li>Buscar un registro </li>
+                    <li>Buscar con orden</li>
+                    <li>Buscar registro ordenado</li>
+                    <li>Buscar registro ordenado y limitado</li>
+                </ul>
+            </li>
+            
+        </ul>
         
     </header>
     <main>
