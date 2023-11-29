@@ -1,8 +1,71 @@
-/* Estilos para el menú */
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+
+    /* Ampliar web a tamaño dispositivo */
+    min-height: 100%;
+}
+
+/* Preparamos sus hijos */
+
+
+/* Crear Grid */
+.grid-container {
+    display: grid;
+
+
+
+
+
+    grid-template:
+        "header" 100px
+     
+        "main" auto
+        
+        "footer" 100px;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+       
+
+        grid-template:
+            "header" auto
+            "main" auto
+            "footer" 100px 
+            
+
+    }
+
+}
+
+
+header{
+    grid-area: header;
+   
+    padding: 15px;
+    text-align: center;
+}
+main{
+    grid-area: main;
+    padding: 15px;
+}
+footer{
+    grid-area: footer;
+    padding: 15px;
+    text-align: center;
+}
+
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 15px;
+
     font-size: 30px;
 }
 
@@ -10,12 +73,13 @@ ul li {
     display: inline-block;
     position: relative;
     padding-left: 15px;
-    
+
+
 }
 
 ul li:hover {
     background-color: #f2f2f2;
-border-radius: 15px;
+    border-radius: 15px;
 }
 
 ul li a {
@@ -47,6 +111,3 @@ ul li ul li a {
     padding: 10px 20px;
     color: #333;
 }
-
-
-

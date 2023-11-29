@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
+<body class="grid-container">
     <?php 
      error_reporting(E_ALL);
      ini_set('display_errors', 1);
@@ -32,23 +32,23 @@
         <h1></h1>
 
         <ul>
-            <li>Inicio</li>
+            <li><a href="#">Inicio</a></li>
             <li>Acciones
                 <ul>
-                    <li>Altas</li>
-                    <li>Bajas</li>
-                    <li>Modificar</li>
-                </ul>
-            <li>Consultas
-                <ul>
-                    <li>Todos Los registros</li>
-                    <li>Buscar un registro </li>
-                    <li>Buscar con orden</li>
-                    <li>Buscar registro ordenado</li>
-                    <li>Buscar registro ordenado y limitado</li>
+                    <li><a href="#">Altas</a></li>
+                    <li><a href="#">Bajas</a></li>
+                    <li><a href="#">Modificar</a></li>
                 </ul>
             </li>
-            
+            <li>Consultas
+                <ul>
+                    <li><a href="#">Todos Los registros</a></li>
+                    <li><a href="#">Buscar un registro</a></li>
+                    <li><a href="#">Buscar con orden</a></li>
+                    <li><a href="#">Buscar registro ordenado</a></li>
+                    <li><a href="#">Buscar registro ordenado y limitado</a></li>
+                </ul>
+            </li>
         </ul>
         
     </header>
