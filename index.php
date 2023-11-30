@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body class="grid-container">
-    <?php 
+  <?php 
      error_reporting(E_ALL);
      ini_set('display_errors', 1);
         // Aqui hacemos la conexion a la base de datos
@@ -28,39 +30,64 @@
 
     
     ?>
-    <header>
-        <h1></h1>
+  <header>
+    <h1></h1>
 
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li>Acciones
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li>Acciones
-                <ul>
-                    <li><a href="#">Altas</a></li>
-                    <li><a href="#">Bajas</a></li>
-                    <li><a href="#">Modificar</a></li>
-                </ul>
-            </li>
-            <li>Consultas
-                <ul>
-                    <li><a href="#">Todos Los registros</a></li>
-                    <li><a href="#">Buscar un registro</a></li>
-                    <li><a href="#">Buscar con orden</a></li>
-                    <li><a href="#">Buscar registro ordenado</a></li>
-                    <li><a href="#">Buscar registro ordenado y limitado</a></li>
-                </ul>
-            </li>
+          <li><a href="#">Altas</a></li>
+          <li><a href="#">Bajas</a></li>
+          <li><a href="#">Modificar</a></li>
         </ul>
-        
-    </header>
-    <main>
-        <div class="contenido">
-            <div class="imagenes">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-        </div>
-    </main>
-    <footer><h1>Aqui va informacion del footer </h1></footer>
+      </li>
+      <li>Consultas
+        <ul>
+          <li><a href="#">Todos Los registros</a></li>
+          <li><a href="#">Buscar un registro</a></li>
+          <li><a href="#">Buscar con orden</a></li>
+          <li><a href="#">Buscar registro ordenado</a></li>
+          <li><a href="#">Buscar registro ordenado y limitado</a></li>
+        </ul>
+      </li>
+    </ul>
+
+  </header>
+  <main>
+    <div class="contenido">
+
+      <figure class="disco">
+        <div class="disco--cover"></div>
+        <div class="disco--vinilo"></div>
+        <figcaption class="disco--caption">
+          <p>Dark side of the moon</p>
+        </figcaption>
+      </figure>
+
+
+      <figure class="disco">
+        <div class="disco--cover"></div>
+        <div class="disco--vinilo"></div>
+        <figcaption class="disco--caption">
+          <p>Dark side of the moon</p>
+        </figcaption>
+      </figure>
+
+
+      <figure class="disco">
+        <div class="disco--cover"></div>
+        <div class="disco--vinilo"></div>
+        <figcaption class="disco--caption">
+          <p>Dark side of the moon</p>
+        </figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <h1>Aqui va informacion del footer </h1>
+  </footer>
 </body>
+
 </html>
