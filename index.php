@@ -31,10 +31,10 @@
     
     ?>
   <header>
-    <h1></h1>
+   <h1 class="titulo">Rk music</h1> 
 
     <ul>
-      <li><a href="#">Inicio</a></li>
+      <a href=""><li>Inicio</li></a>
       <li>Acciones
         <ul>
           <li><a href="#">Altas</a></li>

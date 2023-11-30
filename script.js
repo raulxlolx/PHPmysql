@@ -28,3 +28,4 @@ disco2.addEventListener('click', function() {
 disco3.addEventListener('click', function() {
     reproducirSonido(audio3);
 });
+
