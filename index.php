@@ -53,8 +53,12 @@
         
     </header>
     <main>
-        <div class="container">
-            <h1>Aqui va el contenido de las tablas </h1>
+        <div class="contenido">
+            <div class="imagenes">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
         </div>
     </main>
     <footer><h1>Aqui va informacion del footer </h1></footer>
