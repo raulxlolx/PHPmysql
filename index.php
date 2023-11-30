@@ -57,7 +57,7 @@
   <main>
     <div class="contenido">
 
-      <figure class="disco">
+      <figure class="disco" id="disco1">
         <div class="disco--cover"></div>
         <div class="disco--vinilo"></div>
         <figcaption class="disco--caption">
@@ -66,20 +66,20 @@
       </figure>
 
 
-      <figure class="disco">
+      <figure class="disco"  id="disco2">
         <div class="disco--cover"></div>
         <div class="disco--vinilo"></div>
         <figcaption class="disco--caption">
-          <p>Dark side of the moon</p>
+          <p>Light side of the moon</p>
         </figcaption>
       </figure>
 
 
-      <figure class="disco">
+      <figure class="disco" id="disco3">
         <div class="disco--cover"></div>
         <div class="disco--vinilo"></div>
         <figcaption class="disco--caption">
-          <p>Dark side of the moon</p>
+          <p>keep walking</p>
         </figcaption>
       </figure>
     </div>
@@ -88,6 +88,7 @@
   <footer>
     <h1>Aqui va informacion del footer </h1>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
