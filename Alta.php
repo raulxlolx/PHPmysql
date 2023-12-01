@@ -63,7 +63,7 @@
             <label for="estilo">Estilo Musical</label>
             <input type="text" name="estilo" id="estilo" required>
             <label for="año">Año</label>
-            <input type="number" name="año" id="año" required>
+            <input type="date" name="año" id="año" required>
             <label for="num_canciones">Número de Canciones</label>
             <input type="number" name="num_canciones" id="num_canciones" required>
             <label for="titulos_canciones">Títulos de Canciones</label>
