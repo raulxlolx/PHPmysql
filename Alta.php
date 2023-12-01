@@ -84,7 +84,7 @@
             $nombre = $_POST['nombre'];
             $artista = $_POST['artista'];
             $estilo = $_POST['estilo'];
-            $año = $_POST['año'];
+            $año = date("Y-m-d", strtotime($_POST['año']));
             $num_canciones = $_POST['num_canciones'];
             $titulos_canciones = $_POST['titulos_canciones'];
             $cantidad = $_POST['cantidad'];
