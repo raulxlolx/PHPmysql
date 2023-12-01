@@ -28,7 +28,7 @@
     }
     ?>
     <header>
-        <h1 class="titulo">Rk music</h1>
+        <h1 class="titulo">Alta DVDs</h1>
 
         <ul>
             <a href="index.php"><li>Inicio</li></a>
@@ -52,7 +52,7 @@
 
     </header>
     <main>
-        <h1>Alta de DVDs</h1>
+        
         <form action="Alta.php" method="POST">
             <label for="id">ID</label>
             <input type="number" name="id" id="id" required>
