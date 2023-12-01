@@ -37,7 +37,7 @@
       <a href=""><li>Inicio</li></a>
       <li>Acciones
         <ul>
-          <li><a href="#">Altas</a></li>
+          <li><a href="Alta.php">Altas</a></li>
           <li><a href="#">Bajas</a></li>
           <li><a href="#">Modificar</a></li>
         </ul>
