@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos.css">
+    <style>
+        table {
+            background-color: #f2f2f2;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
 </head>
 
 <body class="grid-container">
@@ -52,7 +69,7 @@
 
     </header>
     <main>
-        
+
         <h1>Buscar por Título de Álbum</h1>
         <form action="" method="GET">
             <label for="titulo_album">Título de Álbum</label>
@@ -81,7 +98,7 @@
                     echo "<td>" . $row['PrecioDVD'] . "</td>";
                     echo "<td>" . $row['DescuentoDVD'] . "</td>";
                     echo "<td>" . $row['IVADVD'] . "</td>";
-                    echo "<td><a href='eliminar.php?id=" . $row['ID_DVD'] . "'>Eliminar</a></td>";
+                    echo "<td><a href='bajas.php?id=" . $row['ID_DVD'] . "&action=delete'>Eliminar</a></td>";
                     echo "</tr>";
                 }
                 echo "</table>";
