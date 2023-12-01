@@ -52,54 +52,7 @@
 
     </header>
     <main>
-        <h1>Alta de DVDs</h1>
-        <form action="Alta.php" method="POST">
-            <label for="id">ID</label>
-            <input type="number" name="id" id="id" required>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" required>
-            <label for="artista">Artista</label>
-            <input type="text" name="artista" id="artista" required>
-            <label for="estilo">Estilo Musical</label>
-            <input type="text" name="estilo" id="estilo" required>
-            <label for="año">Año</label>
-            <input type="date" name="año" id="año" required>
-            <label for="num_canciones">Número de Canciones</label>
-            <input type="number" name="num_canciones" id="num_canciones" required>
-            <label for="titulos_canciones">Títulos de Canciones</label>
-            <input type="text" name="titulos_canciones" id="titulos_canciones" required>
-            <label for="cantidad">Cantidad</label>
-            <input type="number" name="cantidad" id="cantidad" required>
-            <label for="precio">Precio</label>
-            <input type="number" name="precio" id="precio" required>
-            <label for="descuento">Descuento</label>
-            <input type="number" name="descuento" id="descuento" required>
-            <label for="iva">IVA</label>
-            <input type="number" name="iva" id="iva" required>
-            <input type="submit" value="Enviar">
-        </form>
-        <?php
-        if (isset($_POST['id']) && isset($_POST['nombre']) && isset($_POST['artista']) && isset($_POST['estilo']) && isset($_POST['año']) && isset($_POST['num_canciones']) && isset($_POST['titulos_canciones']) && isset($_POST['cantidad']) && isset($_POST['precio']) && isset($_POST['descuento']) && isset($_POST['iva'])) {
-            $id = $_POST['id'];
-            $nombre = $_POST['nombre'];
-            $artista = $_POST['artista'];
-            $estilo = $_POST['estilo'];
-            $año = date("Y-m-d", strtotime($_POST['año']));
-            $num_canciones = $_POST['num_canciones'];
-            $titulos_canciones = $_POST['titulos_canciones'];
-            $cantidad = $_POST['cantidad'];
-            $precio = $_POST['precio'];
-            $descuento = $_POST['descuento'];
-            $iva = $_POST['iva'];
-            $sql = "INSERT INTO $tabladvds (ID_DVD, NombreDVD, ArtistaDVD, EstiloMusicalDVD, AñoDVD, NumeroCancionesDVD, TitulosCancionesDVD, CantidadDVD, PrecioDVD, DescuentoDVD, IVADVD) VALUES ('$id','$nombre','$artista','$estilo','$año','$num_canciones','$titulos_canciones','$cantidad','$precio','$descuento','$iva')";
-            if ($conexion->query($sql) === TRUE) {
-                echo "<h1>Registro insertado correctamente</h1>";
-            } else {
-                echo "Error: " . $sql . "<br>" . $conexion->error;
-            }
-        }
-        ?>
-
+        
         <h1>Buscar por Título de Álbum</h1>
         <form action="" method="GET">
             <label for="titulo_album">Título de Álbum</label>
