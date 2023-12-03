@@ -45,14 +45,14 @@
     }
     ?>
     <header>
-        <h1 class="titulo">Rk music</h1>
+        <h1 class="titulo">Bajas Dvd</h1>
 
         <ul>
             <a href="index.php"><li>Inicio</li></a>
             <li>Acciones
                 <ul>
-                    <li><a href="Alta,php">Altas</a></li>
-                    <li><a href="">Bajas</a></li>
+                    <li><a href="Alta.php">Altas</a></li>
+                    <li><a href="#">Bajas</a></li>
                     <li><a href="#">Modificar</a></li>
                 </ul>
             </li>
@@ -70,7 +70,7 @@
     </header>
     <main>
 
-        <h1>Buscar por Título de Álbum</h1>
+        
         <form action="" method="GET">
             <label for="titulo_album">Título de Álbum</label>
             <input type="text" name="titulo_album" id="titulo_album" required>
@@ -78,6 +78,15 @@
         </form>
 
         <?php
+                    if (isset($_GET['action']) && $_GET['action'] == "delete") {
+                        $id = $_GET['id'];
+                        $sql2 = "DELETE FROM $tabladvds WHERE ID_DVD='$id'";
+                        if ($conexion->query($sql2) === TRUE) {
+                          
+                        } else {
+                            
+                        }
+                    }
         if (isset($_GET['titulo_album'])) {
             $titulo_album = $_GET['titulo_album'];
             $sql = "SELECT * FROM $tabladvds WHERE NombreDVD LIKE '%$titulo_album%'";
@@ -105,6 +114,7 @@
             } else {
                 echo "No se encontraron resultados.";
             }
+
         }
         ?>
     </main>
