@@ -41,11 +41,11 @@
             </li>
             <li>Consultas
                 <ul>
-                    <li><a href="#">Todos Los registros</a></li>
-                    <li><a href="#">Buscar un registro</a></li>
-                    <li><a href="#">Buscar con orden</a></li>
-                    <li><a href="#">Buscar registro ordenado</a></li>
-                    <li><a href="#">Buscar registro ordenado y limitado</a></li>
+                <li><a href="tdr.php">Todos Los registros</a></li>
+          <li><a href="bur.php">Buscar un registro</a></li>
+          <li><a href="bco.php">Buscar con orden</a></li>
+          <li><a href="bro.php">Buscar registro ordenado</a></li>
+          <li><a href="boyl.php">Buscar registro ordenado y limitado</a></li>
                 </ul>
             </li>
         </ul>

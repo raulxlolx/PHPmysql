@@ -108,6 +108,24 @@ if (isset($_POST['id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificar DVDs</title>
     <link rel="stylesheet" href="estilos.css">
+    <style>
+        table {
+            background-color: #f2f2f2;
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 20px; /* Aumenta el tamaño de fuente de la tabla */
+        }
+
+        th, td {
+            padding: 16px; /* Aumenta el padding de las celdas */
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
 </head>
 
 <body class="grid-container">
@@ -125,11 +143,11 @@ if (isset($_POST['id'])) {
             </li>
             <li>Consultas
                 <ul>
-                    <li><a href="#">Todos Los registros</a></li>
-                    <li><a href="#">Buscar un registro</a></li>
-                    <li><a href="#">Buscar con orden</a></li>
-                    <li><a href="#">Buscar registro ordenado</a></li>
-                    <li><a href="#">Buscar registro ordenado y limitado</a></li>
+                <li><a href="tdr.php">Todos Los registros</a></li>
+          <li><a href="bur.php">Buscar un registro</a></li>
+          <li><a href="bco.php">Buscar con orden</a></li>
+          <li><a href="bro.php">Buscar registro ordenado</a></li>
+          <li><a href="boyl.php">Buscar registro ordenado y limitado</a></li>
                 </ul>
             </li>
         </ul>
