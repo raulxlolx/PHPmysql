@@ -17,7 +17,7 @@ if ($conexion->connect_error) {
 
 if (isset($_POST['nombre'])) {
     $nombre = $_POST['nombre'];
-    $sql = "SELECT * FROM $tabladvds WHERE NombreDVD = '$nombre'";
+    $sql = "SELECT * FROM $tabladvds WHERE NombreDVD LIKE '%$nombre%'";
     $result = $conexion->query($sql);
     if ($result->num_rows > 0) {
         echo "<table>";
@@ -49,7 +49,7 @@ if (isset($_POST['nombre'])) {
         $result = $conexion->query($sql);
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
-            echo "<form action='' method='POST'>";
+            echo "<form action='' method='POST' class='modificar-form'>";
             echo "<input type='hidden' name='id' value='" . $row['ID_DVD'] . "'>";
             echo "<label for='nombre'>Nombre:</label>";
             echo "<input type='text' name='nombre' id='nombre' value='" . $row['NombreDVD'] . "' required><br>";
@@ -76,9 +76,6 @@ if (isset($_POST['nombre'])) {
         } else {
             echo "No se encontró el DVD.";
         }
-    } else {
-        header("Location: modificar.php");
-        exit();
     }
 }
 
@@ -102,7 +99,6 @@ if (isset($_POST['id'])) {
         echo "Error al actualizar el registro: " . $conexion->error;
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="es">
