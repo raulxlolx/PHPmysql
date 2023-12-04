@@ -89,6 +89,7 @@ if (isset($_POST['id'])) {
     $titulos_canciones = $_POST['titulos_canciones'];
     $cantidad = $_POST['cantidad'];
     $precio = $_POST['precio'];
+    
     $descuento = $_POST['descuento'];
     $iva = $_POST['iva'];
 
