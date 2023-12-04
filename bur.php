@@ -82,7 +82,7 @@ if (isset($_POST['id'])) {
                 <ul>
                     <li><a href="Alta.php">Altas</a></li>
                     <li><a href="bajas.php">Bajas</a></li>
-                    <li><a href="#">Modificar</a></li>
+                    <li><a href="modificar.php">Modificar</a></li>
                 </ul>
             </li>
             <li>Consultas

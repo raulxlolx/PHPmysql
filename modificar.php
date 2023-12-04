@@ -89,7 +89,7 @@ if (isset($_POST['id'])) {
     $titulos_canciones = $_POST['titulos_canciones'];
     $cantidad = $_POST['cantidad'];
     $precio = $_POST['precio'];
-    
+
     $descuento = $_POST['descuento'];
     $iva = $_POST['iva'];
 
@@ -139,7 +139,7 @@ if (isset($_POST['id'])) {
                 <ul>
                     <li><a href="Alta.php">Altas</a></li>
                     <li><a href="bajas.php">Bajas</a></li>
-                    <li><a href="#">Modificar</a></li>
+                    <li><a href="modificar.php">Modificar</a></li>
                 </ul>
             </li>
             <li>Consultas
