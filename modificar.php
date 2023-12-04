@@ -1,75 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
+$server = "localhost";
+$user = "root";
+$passw = "";
+$db_name = "bbddrkmusic";
 
-<body class="grid-container">
-    <?php
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
-    // Aqui hacemos la conexion a la base de datos
-    $server = "localhost";
-    $user = "root";
-    $passw = "";
-    $db_name = "bbddrkmusic";
-    // aqui van las tablas que vamos a crear
-    $tabladvds = "tdrkdvds";
-    $tablaventas = "tdrkventas";
+$tabladvds = "tdrkdvds";
 
-    $conexion = new mysqli($server, $user, $passw, $db_name);
+$conexion = new mysqli($server, $user, $passw, $db_name);
 
-    if ($conexion->connect_error) {
-        die("Error en la conexion: " . $conexion->connect_error);
-    }
+if ($conexion->connect_error) {
+    die("Error en la conexión: " . $conexion->connect_error);
+}
 
-    if (isset($_POST['nombre'])) {
-        $nombre = $_POST['nombre'];
-        $sql = "SELECT * FROM $tabladvds WHERE NombreDVD = '$nombre'";
-        $result = $conexion->query($sql);
-        if ($result->num_rows > 0) {
-            echo "<table>";
-            echo "<tr><th>ID</th><th>Nombre</th><th>Artista</th><th>Estilo Musical</th><th>Año</th><th>Número de Canciones</th><th>Títulos de Canciones</th><th>Cantidad</th><th>Precio</th><th>Descuento</th><th>IVA</th><th>Modificar</th></tr>";
-            while ($row = $result->fetch_assoc()) {
-                echo "<tr>";
-                echo "<td>" . $row['ID_DVD'] . "</td>";
-                echo "<td>" . $row['NombreDVD'] . "</td>";
-                echo "<td>" . $row['ArtistaDVD'] . "</td>";
-                echo "<td>" . $row['EstiloMusicalDVD'] . "</td>";
-                echo "<td>" . $row['AñoDVD'] . "</td>";
-                echo "<td>" . $row['NumeroCancionesDVD'] . "</td>";
-                echo "<td>" . $row['TitulosCancionesDVD'] . "</td>";
-                echo "<td>" . $row['CantidadDVD'] . "</td>";
-                echo "<td>" . $row['PrecioDVD'] . "</td>";
-                echo "<td>" . $row['DescuentoDVD'] . "</td>";
-                echo "<td>" . $row['IVADVD'] . "</td>";
-                echo "<td><a href='modificar_registro.php?id=" . $row['ID_DVD'] . "'>Modificar</a></td>";
-                echo "</tr>";
-            }
-            echo "</table>";
-        } else {
-            echo "No se encontraron resultados.";
+if (isset($_POST['nombre'])) {
+    $nombre = $_POST['nombre'];
+    $sql = "SELECT * FROM $tabladvds WHERE NombreDVD = '$nombre'";
+    $result = $conexion->query($sql);
+    if ($result->num_rows > 0) {
+        echo "<table>";
+        echo "<tr><th>ID</th><th>Nombre</th><th>Artista</th><th>Estilo Musical</th><th>Año</th><th>Número de Canciones</th><th>Títulos de Canciones</th><th>Cantidad</th><th>Precio</th><th>Descuento</th><th>IVA</th><th>Modificar</th></tr>";
+        while ($row = $result->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>" . $row['ID_DVD'] . "</td>";
+            echo "<td>" . $row['NombreDVD'] . "</td>";
+            echo "<td>" . $row['ArtistaDVD'] . "</td>";
+            echo "<td>" . $row['EstiloMusicalDVD'] . "</td>";
+            echo "<td>" . $row['AñoDVD'] . "</td>";
+            echo "<td>" . $row['NumeroCancionesDVD'] . "</td>";
+            echo "<td>" . $row['TitulosCancionesDVD'] . "</td>";
+            echo "<td>" . $row['CantidadDVD'] . "</td>";
+            echo "<td>" . $row['PrecioDVD'] . "</td>";
+            echo "<td>" . $row['DescuentoDVD'] . "</td>";
+            echo "<td>" . $row['IVADVD'] . "</td>";
+            echo "<td><a href='modificar.php?id=" . $row['ID_DVD'] . "'>Modificar</a></td>";
+            echo "</tr>";
         }
-    } elseif (isset($_GET['id'])) {
+        echo "</table>";
+    } else {
+        echo "No se encontraron resultados.";
+    }
+} else {
+    if (isset($_GET['id'])) {
         $id = $_GET['id'];
         $sql = "SELECT * FROM $tabladvds WHERE ID_DVD = '$id'";
         $result = $conexion->query($sql);
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
-            // Display the form with the existing data for modification
-            echo "<form action='actualizar_registro.php' method='POST'>";
+            echo "<form action='' method='POST'>";
+            echo "<input type='hidden' name='id' value='" . $row['ID_DVD'] . "'>";
             echo "<label for='nombre'>Nombre:</label>";
             echo "<input type='text' name='nombre' id='nombre' value='" . $row['NombreDVD'] . "' required><br>";
             echo "<label for='artista'>Artista:</label>";
             echo "<input type='text' name='artista' id='artista' value='" . $row['ArtistaDVD'] . "' required><br>";
             echo "<label for='estilo'>Estilo Musical:</label>";
             echo "<input type='text' name='estilo' id='estilo' value='" . $row['EstiloMusicalDVD'] . "' required><br>";
-            echo "<label for='ano'>Año:</label>";
-            echo "<input type='text' name='ano' id='ano' value='" . $row['AñoDVD'] . "' required><br>";
+            echo "<label for='anio'>Año:</label>";
+            echo "<input type='text' name='anio' id='anio' value='" . $row['AñoDVD'] . "' required><br>";
             echo "<label for='num_canciones'>Número de Canciones:</label>";
             echo "<input type='text' name='num_canciones' id='num_canciones' value='" . $row['NumeroCancionesDVD'] . "' required><br>";
             echo "<label for='titulos_canciones'>Títulos de Canciones:</label>";
@@ -82,13 +71,50 @@
             echo "<input type='text' name='descuento' id='descuento' value='" . $row['DescuentoDVD'] . "' required><br>";
             echo "<label for='iva'>IVA:</label>";
             echo "<input type='text' name='iva' id='iva' value='" . $row['IVADVD'] . "' required><br>";
-            echo "<input type='submit' value='Actualizar'>";
+            echo "<input type='submit' value='Guardar'>";
             echo "</form>";
         } else {
-            echo "No se encontraron resultados.";
+            echo "No se encontró el DVD.";
         }
+    } else {
+        header("Location: modificar.php");
+        exit();
     }
-    ?>
+}
+
+if (isset($_POST['id'])) {
+    $id = $_POST['id'];
+    $nombre = $_POST['nombre'];
+    $artista = $_POST['artista'];
+    $estilo = $_POST['estilo'];
+    $anio = $_POST['anio'];
+    $num_canciones = $_POST['num_canciones'];
+    $titulos_canciones = $_POST['titulos_canciones'];
+    $cantidad = $_POST['cantidad'];
+    $precio = $_POST['precio'];
+    $descuento = $_POST['descuento'];
+    $iva = $_POST['iva'];
+
+    $sql = "UPDATE $tabladvds SET NombreDVD = '$nombre', ArtistaDVD = '$artista', EstiloMusicalDVD = '$estilo', AñoDVD = '$anio', NumeroCancionesDVD = '$num_canciones', TitulosCancionesDVD = '$titulos_canciones', CantidadDVD = '$cantidad', PrecioDVD = '$precio', DescuentoDVD = '$descuento', IVADVD = '$iva' WHERE ID_DVD = '$id'";
+    if ($conexion->query($sql) === TRUE) {
+        echo "Registro actualizado correctamente.";
+    } else {
+        echo "Error al actualizar el registro: " . $conexion->error;
+    }
+}
+
+?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar DVDs</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="grid-container">
     <header>
         <h1 class="titulo">Modificar DVDs</h1>
 
