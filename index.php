@@ -85,9 +85,7 @@
     </div>
   </main>
 
-  <footer>
-    <h1>Aqui va informacion del footer </h1>
-  </footer>
+
   <script src="script.js"></script>
 </body>
 
